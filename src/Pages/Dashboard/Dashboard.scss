@@ -1,0 +1,763 @@
+@import '../../css-conig/mixins.scss';
+
+.Dashboard {
+
+  .dashboard-content {
+    @include sm{
+      margin-right: 20px;
+      padding-left: 20px;
+      padding-top:80px;
+
+    }
+    @include md{
+      margin-right: 20px;
+      padding-left: 130px;
+      padding-top:80px;
+    }
+    @include lg{
+      padding-right: 50px;
+      padding-left: 265px;
+      padding-top: 80px;
+      
+      
+    }
+
+    .dashboard-title {
+      p {
+        @include sm{
+          font-family: poppins;
+          font-size: 24px;
+          color: #161e54;
+        }
+        @include md{
+          font-family: poppins;
+        font-size: 24px;
+        color: #161e54;
+        }
+        @include lg{
+          font-family: poppins;
+        font-size: 24px;
+        color: #161e54;
+        }
+        
+      }
+    }
+
+    .content-data {
+
+      @include sm{
+        display: flex;
+        flex-direction: column;
+      }
+      @include md{
+        display: flex;
+        flex-direction: column;
+      }
+      @include lg{
+        display: flex;
+
+        flex-direction: row;
+      }
+
+      .data-left {
+       
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+
+        .data-top {
+          @include sm{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height: fit-content;
+          }
+          @include md{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            height: fit-content;
+          }
+          @include lg{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            height: fit-content;
+          }
+
+          .data-top1 {
+            flex-grow: 1;
+            background: #ffefe7;
+            padding: 12px 12px 12px 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+
+            .top11 {
+              font-size: 18px;
+              font-family: poppins;
+              color: #161e54;
+              font-weight: 500;
+            }
+
+            .top12 {
+              font-size: 36px;
+              font-family: poppins;
+              color: #161e54;
+              font-weight: 500;
+            }
+
+            .top13 {
+              font-size: 16px;
+              font-family: poppins;
+              color: #ff5151;
+              font-weight: 400;
+            }
+          }
+
+          .data-top2 {
+            flex-grow: 1;
+            background: #e8f0fb;
+            padding: 12px 12px 12px 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+
+            .top21 {
+              font-size: 18px;
+              font-family: poppins;
+              color: #161e54;
+              font-weight: 500;
+            }
+
+            .top22 {
+              font-size: 36px;
+              font-family: poppins;
+              color: #161e54;
+              font-weight: 500;
+            }
+
+            .top23 {
+              font-size: 16px;
+              font-family: poppins;
+              color: #3786f1;
+              font-weight: 400;
+            }
+          }
+
+          .data-top3 {
+            flex-grow: 1;
+            background: #fdebf9;
+            padding: 12px 12px 12px 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+
+            .top31 {
+              font-size: 18px;
+              font-family: poppins;
+              color: #161e54;
+              font-weight: 500;
+            }
+            .top32 {
+              font-size: 36px;
+              font-family: poppins;
+              color: #161e54;
+              font-weight: 500;
+            }
+            .top33 {
+              font-size: 16px;
+              font-family: poppins;
+              color: #ee61cf;
+              font-weight: 400;
+            }
+          }
+        }
+
+        .data-middle {
+          @include sm{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          }
+          @include md{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+          }
+          @include lg{
+            
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+          }
+
+          .middle-left {
+            border: 1px solid rgb(0, 0, 0, 0.2);
+            flex-grow: 1;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+
+            .left-data {
+              display: flex;
+              flex-direction: column;
+
+              .left-data-title {
+                font-family: poppins;
+                font-size: 18px;
+                font-weight: 500;
+                color: #161e54;
+              }
+              .left-data-quantity {
+                font-family: poppins;
+                font-size: 48px;
+                font-weight: 500;
+                color: #161e54;
+              }
+              .left-data-quantity-men {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                  "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+                  "Helvetica Neue", sans-serif;
+                font-size: 12px;
+                font-weight: 400;
+                color: #686868;
+              }
+              .left-data-quantity-women {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                  "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+                  "Helvetica Neue", sans-serif;
+                font-size: 12px;
+                font-weight: 400;
+                color: #686868;
+              }
+            }
+
+            .left-graph {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+
+              .left-dat {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                  "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+                  "Helvetica Neue", sans-serif;
+                font-size: 12px;
+                font-weight: 400;
+                color: #303030;
+                text-align: center;
+                background: #ffefe7;
+                border-radius: 4px;
+              }
+            }
+          }
+
+          .middle-right {
+            border: 1px solid rgb(0, 0, 0, 0.2);
+            flex-grow: 1;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+
+            .right-data {
+              display: flex;
+              flex-direction: column;
+
+              .right-data-title {
+                font-family: poppins;
+                font-size: 18px;
+                font-weight: 500;
+                color: #161e54;
+              }
+              .right-data-quantity {
+                font-family: poppins;
+                font-size: 48px;
+                font-weight: 500;
+                color: #161e54;
+              }
+              .right-data-quantity-men {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                  "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+                  "Helvetica Neue", sans-serif;
+                font-size: 12px;
+                font-weight: 400;
+                color: #686868;
+              }
+              .right-data-quantity-women {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                  "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+                  "Helvetica Neue", sans-serif;
+                font-size: 12px;
+                font-weight: 400;
+                color: #686868;
+              }
+            }
+
+            .right-graph {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+
+              .right-dat {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                  "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+                  "Helvetica Neue", sans-serif;
+                font-size: 12px;
+                font-weight: 400;
+                color: #303030;
+                text-align: center;
+                border-radius: 4px;
+                background: #ffefe7;
+              }
+            }
+          }
+        }
+
+        .data-bottom {
+          @include sm{
+            border: 1px solid rgb(0, 0, 0, 0.2);
+            border-radius: 10px;
+            height: 334px;
+            display: flex;
+            flex-direction: column;
+            overflow-y: hidden;
+          }
+          @include md{
+            border: 1px solid rgb(0, 0, 0, 0.2);
+          border-radius: 10px;
+          height: 334px;
+          display: flex;
+          flex-direction: column;
+          overflow-y: hidden;
+          }
+          @include lg{
+            border: 1px solid rgb(0, 0, 0, 0.2);
+          border-radius: 10px;
+          height: 334px;
+          display: flex;
+          flex-direction: column;
+          overflow-y: hidden;
+          }
+          
+
+          .data-bottom-top {
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+             
+            span {
+              color: #161e54;
+              font-family: Poppins;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 28px;
+              letter-spacing: 0em;
+              text-align: left;
+            }
+
+          }
+
+          .data-bottom-middle {
+            @include sm{
+              flex-grow: 1;
+              overflow-y:scroll;
+             
+            }
+
+            @include md{
+              flex-grow: 1;
+              overflow-y:scroll;
+            }
+            @include lg{
+              flex-grow: 1;
+              overflow-y:scroll;
+            }
+            .d-b-m-d {
+              margin: 0 20px;
+              border: 1px solid rgb(0, 0, 0, 0.1);
+              border-radius: 6px;
+              background: rgb(224, 224, 224, 0.5);
+              color: #303030;
+              height: fit-content;
+              display: flex;
+              justify-content: space-between;
+              padding: 10px;
+              margin-bottom: 10px;
+
+              .scroll-list-data {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                .span-1 {
+                  font-family: Poppins;
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 24px;
+                  letter-spacing: 0em;
+                  text-align: left;
+                }
+                .span-2 {
+                  
+                  font-family: Roboto;
+                  font-size: 10px;
+                  font-weight: 400;
+                  line-height: 14px;
+                  letter-spacing: 0em;
+                  text-align: left;
+                }
+              }
+              .scroll-list-img {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+              }
+            }
+          }
+
+          .data-bottom-bottom {
+            display: flex;
+            flex-direction: column;
+            border-top: 1px solid rgb(0, 0, 0, 0.2);
+            justify-content: center;
+            align-items: center;
+            span {
+              padding: 10px;
+              font-family: Poppins;
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 20px;
+              color: #ff5151;
+              letter-spacing: 0em;
+              text-align: center;
+            }
+          }
+        }
+      }
+
+      .data-right {
+
+        @include sm{
+          width: auto;
+          display: flex;
+          flex-direction: column;
+          margin-top: 10px;
+          gap: 10px;
+          margin-bottom: 10px;
+          height: max-content;
+        }
+
+        @include md{          
+          width: auto;
+          display: flex;
+          flex-direction: row;
+          margin-top: 10px;
+          gap: 10px;
+          margin-bottom: 10px;
+          height: max-content;
+           
+        }
+        @include lg{
+        flex-grow: 1;
+        height: max-content;
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        margin-top: 0px;
+        gap: 0px;
+        margin-bottom: 0px;
+        }
+        .right-top {
+
+          @include sm{
+            background: #1b204a;
+            color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            height: max-content;
+          }
+
+          @include md{
+            background: #1b204a;
+            color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            height: max-content;
+          }
+          @include lg{
+            margin: 0 50px;
+            background: #1b204a;
+            color: white;
+            height: max-content;
+            border-radius: 10px;
+            overflow: hidden;
+
+          }
+
+          .right-top-title {
+            width: 100%;
+            background: #161e54;
+            padding: 15px 20px;
+            .title-top {
+              font-size: 18px;
+              font-family: poppins;
+              font-weight: 500;
+            }
+          }
+
+          .activity-middle {
+            @include sm{
+              display: flex;
+              flex-direction: column;
+              margin-top: 20px;
+              padding: 0 20px;
+              height: 200px;
+              }
+            @include md{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            padding: 0 20px;
+            height: 200px;
+            }
+            @include  lg{
+              height: auto;
+            }
+            .span-1 {
+              font-family: Roboto;
+              font-size: 10px;
+              font-weight: 500;
+              line-height: 12px;
+              letter-spacing: 0em;
+              text-align: left;
+            }
+
+            .span-2 {
+              font-family: Poppins;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 28px;
+              letter-spacing: 0em;
+              text-align: left;
+            }
+
+            .span-3 {
+              @include md{
+                width: 240px;
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0em;
+                text-align: left;
+                padding: 10px 0 20px 0;
+              }
+              @include lg{
+                width: 340px;
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0em;
+                text-align: left;
+                padding: 10px 0 20px 0;
+              }
+            }
+          }
+
+          .action-bottom {
+            @include sm{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              flex-direction: row;
+              padding: 20px;
+            }
+            @include md{
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+              padding: 20px;
+            }
+            @include lg{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              flex-direction: row;
+              padding: 20px;
+            }
+
+            .action-bottom-span {
+              @include md{
+                font-family: Poppins;
+                font-size: 14px;
+                font-weight: 400;
+                text-align: left;
+              }
+              @include lg{
+                
+                font-family: Poppins;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21px;
+                letter-spacing: 0em;
+                text-align: left;
+              }
+            }
+            button {
+              
+              @include sm{
+                padding: 10px 20px;
+                border-radius: 4px;
+                background: #ff5151;
+                font-family: poppins;
+                margin-top: 0;
+                color: white;
+                border: none;
+                gap: 10px;
+                cursor: pointer;
+              }
+
+              @include md{
+                margin-top: 20px;
+                padding: 10px 50px;
+                border-radius: 4px;
+                background: #ff5151;
+                font-family: poppins;
+                color: white;
+                border: none;
+                cursor: pointer;
+                
+              }
+              @include lg{
+                padding: 10px 20px;
+                border-radius: 4px;
+                background: #ff5151;
+                font-family: poppins;
+                margin-top: 0;
+                color: white;
+                border: none;
+                gap: 10px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+
+        .right-bottom {
+          @include md{
+            flex-grow: 1;
+          height: 394px;
+          }
+          @include lg{
+            flex-grow: 1;
+          margin: 0 50px;
+          height: 394px;
+          }
+          .right-data-bottom {
+            border: 1px solid rgb(0, 0, 0, 0.2);
+            border-radius: 10px;
+            height: 394px;
+            display: flex;
+            flex-direction: column;
+  
+            .right-data-bottom-top {
+              margin: 20px;
+              display: flex;
+              justify-content: space-between;
+              span {
+                color: #161e54;
+                font-family: Poppins;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 28px;
+                letter-spacing: 0em;
+                text-align: left;
+              }
+            }
+  
+            .right-data-bottom-middle {
+              @include sm{
+                flex-grow: 1;
+                overflow-y:scroll;   
+              }
+              @include md{
+                flex-grow: 1;
+                overflow-y:scroll;   
+              }
+              @include lg{
+                flex-grow: 1;
+                overflow-y:scroll;   
+              }
+
+  
+              .d-b-m-d {
+                margin: 0 20px;
+                border: 1px solid rgb(0, 0, 0, 0.1);
+                border-radius: 6px;
+                background: rgb(224, 224, 224, 0.5);
+                color: #303030;
+                height: max-content;
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+                margin-bottom: 10px;
+                
+  
+                .scroll-list-data {
+                  display: flex;
+                  flex-direction: column;
+                  flex-grow: 1;
+                  .span-1 {
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                  }
+                  .span-2 {
+                    
+                    font-family: Roboto;
+                    font-size: 10px;
+                    font-weight: 400;
+                    line-height: 14px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                  }
+                }
+                .scroll-list-img {
+                  display: flex;
+                  align-items: center;
+                  gap: 5px;
+                }
+              }
+            }
+  
+            .right-data-bottom-bottom {
+                display: flex;
+                flex-direction: column;
+                border-top: 1px solid rgb(0, 0, 0, 0.2);
+                justify-content: center;
+                align-items: center;
+                span {
+                  padding: 10px;
+                  font-family: Poppins;
+                  font-size: 14px;
+                  font-weight: 500;
+                  line-height: 20px;
+                  color: #ff5151;
+                  letter-spacing: 0em;
+                  text-align: center;
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+}

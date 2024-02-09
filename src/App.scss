@@ -1,0 +1,15 @@
+.App{
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+    .comp-div{
+        display:flex;
+        width: 100%;
+        position: fixed;
+        height: fit-content;
+
+        .comp-nav{
+            flex-grow: 1;
+        }
+       
+    }
+} 

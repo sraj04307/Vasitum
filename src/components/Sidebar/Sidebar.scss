@@ -1,0 +1,270 @@
+@import "../../css-conig/mixins.scss";
+
+.speical-child {
+  border: none;
+  display: flex;
+  gap: 20px;
+  color: #ff5151;
+  padding: 0px 20px;
+  
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  p {
+    @include md {
+      display: none;
+    }
+    @include lg {
+      display: flex;
+    }
+  }
+
+  .speical-child-svg {
+    fill: #ff5151;
+  }
+}
+
+.side-bar {
+
+  @include sm{
+    display: none;
+  }
+  @include md {
+    width: 90px;
+    height: 100vh;
+    background: #fbfbfb;
+    display: block;
+  }
+  @include lg {
+    width: 242px;
+    height: 100vh;
+    background: #fbfbfb;
+    display: block;
+  }
+
+  .top {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+
+    p {
+      @include md {
+        display: none;
+      }
+      @include lg {
+        display: flex;
+        color: #0a337a;
+        font-size: 30px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .middle {
+    .mid-parent {
+      @include md{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:20px;
+      }
+      @include lg{
+        display: block;
+      }
+      .mid-parent-title {
+        @include md {
+          padding: 0 10px;
+          font-size: 10px;
+          font-weight: 500;
+          line-height: 18px;
+          color: #686868;
+          opacity: 50%;
+        }
+        @include lg {
+          padding: 0 20px;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 18px;
+          color: #686868;
+          opacity: 50%;
+        }
+      }
+
+      .mid-child1 {
+        border: none;
+        display: flex;
+        gap: 20px;
+        color: #686868;
+        padding: 0px 20px;
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+        align-items: center;
+        @include md {
+          
+          p {
+            display: none;
+          }
+        }
+        @include lg {
+          p {
+            display: flex;
+          }
+        }
+      }
+      .mid-child2 {
+        border: none;
+        display: flex;
+        gap: 20px;
+        color: #686868;
+        padding: 0px 20px;
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+        align-items: center;
+        @include md {
+          p {
+            display: none;
+          }
+        }
+        @include lg {
+          p {
+            display: flex;
+          }
+        }
+      }
+      .mid-child3 {
+        border: none;
+        display: flex;
+        gap: 20px;
+        color: #686868;
+        padding: 0px 20px;
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+        align-items: center;
+        @include md {
+          p {
+            display: none;
+          }
+        }
+        @include lg {
+          p {
+            display: flex;
+          }
+        }
+      }
+      .mid-child4 {
+        border: none;
+        display: flex;
+        gap: 20px;
+        color: #686868;
+        padding: 0px 20px;
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+        align-items: center;
+        @include md {
+          p {
+            display: none;
+          }
+        }
+        @include lg {
+          p {
+            display: flex;
+          }
+        }
+      }
+      .mid-child5 {
+        border: none;
+        display: flex;
+        gap: 20px;
+        color: #686868;
+        padding: 0px 20px;
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+        align-items: center;
+        @include md {
+          p {
+            display: none;
+          }
+        }
+        @include lg {
+          p {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom {
+    .bottom-parent {
+      @include md{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:20px;
+      }
+      @include lg{
+        display: block;
+      }
+      .bottom-parent-title {
+        @include md{
+          padding: 0 20px;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 18px;
+        color: #686868;
+        opacity: 50%;
+        }
+        @include lg{
+          padding: 0 20px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        color: #686868;
+        opacity: 50%;
+        }
+      }
+
+      .bottom-child1 {
+        border: none;
+        display: flex;
+        gap: 20px;
+        color: #686868;
+        padding: 0px 20px;
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+        align-items: center;
+        @include md {
+          p {
+            display: none;
+          }
+        }
+        @include lg {
+          p {
+            display: flex;
+          }
+        }
+      }
+      .bottom-child2 {
+        border: none;
+        display: flex;
+        gap: 20px;
+        color: #686868;
+        padding: 0px 20px;
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+        align-items: center;
+        @include md {
+          p {
+            display: none;
+          }
+        }
+        @include lg {
+          p {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}
